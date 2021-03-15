@@ -17,7 +17,6 @@ const card = fs.readFileSync('./templates/card.html', 'utf-8');
 const product = fs.readFileSync('./templates/product.html', 'utf-8');
 
 const slugs = dataObj.map(item => slugify(item.productName, { lower: true }));
-console.log(slugs)
 
 //SERVER//
 const server = http.createServer((req, res) => {
